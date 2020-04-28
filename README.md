@@ -138,8 +138,7 @@ mv token.json ./profiles/default.json
     useA2D: false,
   },
 },
-             ]
-
+           ]
 };
 ```
 ### STEP6. Run and Test
@@ -147,6 +146,5 @@ mv token.json ./profiles/default.json
 ```sh
 cd /MagicMirror/
 DISPLAY=:0 npm start
-
 ```
-2. Using Hotwork "smart-mirror" to wakeup MagicMirror and test
+2. Using Hotword "smart-mirror" to wakeup MM MK2 and test
