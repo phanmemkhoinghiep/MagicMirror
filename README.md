@@ -17,7 +17,7 @@ cd MMM-Hotword
 npm install
 ```
 After that, using automatic installation method
-### STEP3. Installing MMM MK2 Version 3.1.0-2 by Command line
+### STEP3. Installing MMM MK2 Version 3.1.0-2
 ```
 cd ~/MagicMirror/modules/
 cd modules
@@ -26,3 +26,30 @@ cd MMM-AssistantMk2
 npm install
 ```
 After that, using automatic installation method
+
+### STEP4. Configure MMM MK2 Module
+1. Go to Google Action Console and create a new project
+```
+https://console.actions.google.com
+```
+2. Open the Google Cloud Platform Console and select the generated project
+```
+https://console.cloud.google.com
+```
+3. Search for the Google Assistant API and click Enable.
+4. Click CONFIGURE ... of Credentials and put the name and e-mail.
+5. Generate Other credentials with the OAuth Client ID in Create Credentials
+6. Download generated OAuth client ID in json format
+7. Move the downloaded OAuth client ID to MagicMirror and rename it to credentials.json /module/MMM-AssistantMk2/
+```sh
+mv ~/Download/cre.... credentials.json
+```
+8. Run auth_and_test.js to verify the generated client ID
+```sh
+node auth_and_test.js
+```
+9. Accept the client verification process and copy and enter your Google account key
+10. Move the generated token.json
+```sh
+mv token.json ./profiles/default.json
+```
