@@ -44,12 +44,14 @@ https://console.cloud.google.com
 ```sh
 mv ~/Download/cre.... credentials.json
 ```
-8. Run auth_and_test.js to verify the generated client ID
+8. From the local command line in Hardware, run auth_and_test.js to verify the generated client ID
 ```sh
+cd /MagicMirror/modules/MMM-AssistantMk2
 node auth_and_test.js
 ```
-9. Accept the client verification process and copy and enter your Google account key
-10. Move the generated token.json
+9. The local browser will display follow it to accept the client verification process to generate the key
+10. Copy the key and paste to the local command line
+11. Move the generated token.json
 ```sh
 mv token.json ./profiles/default.json
 ```
