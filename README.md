@@ -3,14 +3,14 @@ This is my config for MagicMirror
 (Original source from Magic Miror Offcial Website: https://magicmirror.builders/)
 ### STEP1. Installing a Magic Mirror
 Install the Magic Mirror using a script on the Internet
-```
+```sh
 sudo apt-get install npm
 sudo npm install -g npm@latest
 bash -c "$(curl -sL https://raw.githubusercontent.com/sdetweil/MagicMirror_scripts/master/raspberry.sh)"
 ```
 After that, using automatic installation method
 ### STEP2. Installing WWW Hotword
-```
+```sh
 cd ~/MagicMirror/modules
 git clone https://github.com/bugsounet/MMM-Hotword.git
 cd MMM-Hotword
@@ -18,7 +18,7 @@ npm install
 ```
 After that, using automatic installation method
 ### STEP3. Installing MMM MK2 Version 3.1.0-2
-```
+```sh
 cd ~/MagicMirror/modules/
 cd modules
 git clone https://github.com/bugsounet/MMM-AssistantMk2
@@ -29,11 +29,11 @@ After that, using automatic installation method
 
 ### STEP4. Configure Google Account
 1. Go to Google Action Console and create a new project
-```
+```sh
 https://console.actions.google.com
 ```
 2. Open the Google Cloud Platform Console and select the generated project
-```
+```sh
 https://console.cloud.google.com
 ```
 3. Search for the Google Assistant API and click Enable.
@@ -138,7 +138,7 @@ mv token.json ./profiles/default.json
     useA2D: false,
   },
 },
-	]
+             ]
 
 };
 ```
@@ -147,6 +147,6 @@ mv token.json ./profiles/default.json
 ```sh
 cd /MagicMirror/
 DISPLAY=:0 npm start
-```
+
 ```
 2. Using Hotwork "smart-mirror" to wakeup MagicMirror and test
